@@ -25,6 +25,8 @@ class CardCell: UICollectionViewCell {
         super.init(frame: frame)
         setupViews()
         
+        self.backgroundColor = UIColor.red
+        
     }
     
     func setupViews() {
