@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         let layout = UICollectionViewLayout()
-        window?.rootViewController = UINavigationController(rootViewController: UIViewController())
+        window?.rootViewController = UINavigationController(rootViewController: CardController(collectionViewLayout: layout))
         
         UINavigationBar.appearance().barTintColor = UIColor.rgba(r: 66, g: 167, b: 244, a: 1)
         
