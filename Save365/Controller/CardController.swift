@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CardController.swift
 //  Save365
 //
 //  Created by Jonathan Yantz on 11/7/17.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CardController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-
-
+    
 }
-
