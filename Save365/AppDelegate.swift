@@ -13,10 +13,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let layout = UICollectionViewLayout()
+        window?.rootViewController = UINavigationController(rootViewController: UIViewController())
+        
+        UINavigationBar.appearance().barTintColor = UIColor.rgba(r: 66, g: 167, b: 244, a: 1)
+        
+        // Remove the black bar/shadow below the menu bar.
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        // Set the status bar to be shown in white.
+        application.statusBarStyle = .lightContent
+        
+        // Add a shadow behind the status bar.
+        let statusBarBackgroundView = UIView()
+        statusBarBackgroundView.backgroundColor = UIColor.rgba(r: 0, g: 0, b: 0, a: 0.1)
+        
+        window?.addSubview(statusBarBackgroundView)
+        window?.addConstraintsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
+        window?.addConstraintsWithFormat(format: "V:|[v0(20)]", views: statusBarBackgroundView)
+        
         return true
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
