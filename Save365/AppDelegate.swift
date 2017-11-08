@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let layout = UICollectionViewLayout()
         window?.rootViewController = UINavigationController(rootViewController: CardController(collectionViewLayout: layout))
         
-        UINavigationBar.appearance().barTintColor = UIColor.rgba(r: 66, g: 167, b: 244, a: 1)
+        // Change the color of the navigation bar.
+        UINavigationBar.appearance().barTintColor = UIColor.rgba(r: 26, g: 127, b: 204, a: 1)
         
         // Remove the black bar/shadow below the menu bar.
         UINavigationBar.appearance().shadowImage = UIImage()
@@ -35,9 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let statusBarBackgroundView = UIView()
         statusBarBackgroundView.backgroundColor = UIColor.rgba(r: 0, g: 0, b: 0, a: 0.1)
         
-        window?.addSubview(statusBarBackgroundView)
-        window?.addConstraintsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
-        window?.addConstraintsWithFormat(format: "V:|[v0(20)]", views: statusBarBackgroundView)
+//        window?.addSubview(statusBarBackgroundView)
+//        window?.addConstraintsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
+//        window?.addConstraintsWithFormat(format: "V:|[v0(20)]", views: statusBarBackgroundView)
         
         return true
         
