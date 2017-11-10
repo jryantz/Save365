@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: CardController(collectionViewLayout: layout))
         
         // Change the color of the navigation bar.
-        UINavigationBar.appearance().barTintColor = UIColor.rgba(r: 26, g: 127, b: 204, a: 1)
+        UINavigationBar.appearance().barTintColor = UIColor.rgba(r: 6, g: 107, b: 184, a: 1)
         
         // Remove the black bar/shadow below the menu bar.
         UINavigationBar.appearance().shadowImage = UIImage()
@@ -31,14 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Set the status bar to be shown in white.
         application.statusBarStyle = .lightContent
-        
-        // Add a shadow behind the status bar.
-        let statusBarBackgroundView = UIView()
-        statusBarBackgroundView.backgroundColor = UIColor.rgba(r: 0, g: 0, b: 0, a: 0.1)
-        
-//        window?.addSubview(statusBarBackgroundView)
-//        window?.addConstraintsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
-//        window?.addConstraintsWithFormat(format: "V:|[v0(20)]", views: statusBarBackgroundView)
         
         return true
         
