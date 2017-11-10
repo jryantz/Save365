@@ -15,6 +15,8 @@
 		9F0120E01FB2AFDA00346BB1 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0120DF1FB2AFDA00346BB1 /* CardController.swift */; };
 		9F0120E21FB2B30500346BB1 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0120E11FB2B30500346BB1 /* CardCell.swift */; };
 		9F0120E41FB2B38500346BB1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0120E31FB2B38500346BB1 /* Card.swift */; };
+		9F0120E61FB4B19300346BB1 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0120E51FB4B19300346BB1 /* MenuBar.swift */; };
+		9F0120E81FB4B77000346BB1 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0120E71FB4B77000346BB1 /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9F0120DF1FB2AFDA00346BB1 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 		9F0120E11FB2B30500346BB1 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		9F0120E31FB2B38500346BB1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9F0120E51FB4B19300346BB1 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		9F0120E71FB4B77000346BB1 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				9F0120E11FB2B30500346BB1 /* CardCell.swift */,
+				9F0120E51FB4B19300346BB1 /* MenuBar.swift */,
+				9F0120E71FB4B77000346BB1 /* MenuCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0120E81FB4B77000346BB1 /* MenuCell.swift in Sources */,
 				9F0120DB1FB2AB7F00346BB1 /* Extensions.swift in Sources */,
 				9F0120E01FB2AFDA00346BB1 /* CardController.swift in Sources */,
+				9F0120E61FB4B19300346BB1 /* MenuBar.swift in Sources */,
 				9F0120E41FB2B38500346BB1 /* Card.swift in Sources */,
 				9F0120C81FB2A89A00346BB1 /* AppDelegate.swift in Sources */,
 				9F0120E21FB2B30500346BB1 /* CardCell.swift in Sources */,
