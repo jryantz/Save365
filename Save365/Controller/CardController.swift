@@ -37,7 +37,30 @@ class CardController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         collectionView?.layer.addSublayer(gl)
         
+        // Move the collection view and the scroll bar down - now it starts below the menu bar.
+        collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
+        
+        // Add the menu bar below the navigation bar.
+        setupMenuBar()
+        
     }
+    
+    let menuBar: MenuBar = MenuBar()
+    
+    private func setupMenuBar() {
+        
+        navigationController?.hidesBarsOnSwipe = true
+        
+        view.addSubview(menuBar)
+        
+        menuBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        menuBar.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
+        menuBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        menuBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+    }
+    
     
     var card: [Card] = [Card]()
     
